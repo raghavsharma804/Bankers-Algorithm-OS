@@ -1,4 +1,6 @@
+//code Written by Raghav Sharma 
 #include <stdio.h> 
+#include<unistd.h>
 int main() 
 { 
     printf("\n\n\n\t\t\t\tWelcome to Banker's Algorithm Tester\n");
@@ -7,7 +9,7 @@ int main()
     int count=0;
     printf("\t\tEnter the number of processes:");
     scanf("%d",&pr);
-    printf("\t\tEnter the number of resources");
+    printf("\t\tEnter the number of resources:");
     scanf("%d",&res);
 	int allocation[pr][res];
 	int maximum[pr][res];
@@ -110,10 +112,11 @@ int main()
     } 
     printf("\n\n\nThe system is in safe state.\nThe order of process is\n"); 
     for (i = 0; i < pr - 1; i++) 
-        printf(" P%d ->", ans[i]); 
+        printf(" P%d-", ans[i]); 
     printf(" P%d", ans[pr - 1]); 
     return (0); 
         x: //label x
-    	printf("\n\n\t\t\t\tA deadlock has occured and It is unsafe state!!!");
+    	printf("\n\n\t\t\t\tA deadlock has occured and It is unsafe state!!!\n");
     	return(0);
 } 
+//code Written by Raghav Sharma 
